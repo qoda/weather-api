@@ -14,7 +14,8 @@ class APITestCase(test.TestCase):
         cls.api_client = APIClient()
 
     @vcr.use_cassette(
-        "weatherapi/apps/location/fixtures/vcr/internal.200.yaml"
+        "weatherapi/apps/location/fixtures/vcr/internal.200.yaml",
+        record_mode='new_episodes'
     )
     def test_api_endpoint(self):
 
@@ -24,6 +25,9 @@ class APITestCase(test.TestCase):
             content_type="application/json"
         )
         self.assertEqual(response.status_code, 200)
+        for key in ['maximum', 'minimum', 'average', 'median']:
+            self.assertIn(key, response.json())
+            self.assertIsInstance(response.json()[key], float)
 
     @vcr.use_cassette(
         "weatherapi/apps/location/fixtures/vcr/internal.400.yaml",
