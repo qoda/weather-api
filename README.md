@@ -27,7 +27,7 @@ python -m pip install -r requirements.txt
 
 ```bash
 python -m pip install requirements.test.txt
-coverage run manage.py test
+coverage run manage.py test weatherapi --settings=weatherapi.settings
 coverage report -m
 ```
 

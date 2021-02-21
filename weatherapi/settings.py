@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Project specific apps
-    'weatherapi.apps.weather',
+    'weatherapi.apps.location',
 
     # 3rd party apps
     'rest_framework'
