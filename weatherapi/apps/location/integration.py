@@ -14,7 +14,7 @@ class WeatherAPI(object):
         self.api_url = settings.WEATHERAPI['URL']
         self.api_key = settings.WEATHERAPI['KEY']
 
-    def get_forecast(self, days=3):
+    def get_forecast(self, days):
         """Get a weather forecast for period of time.
         """
         payload = {
@@ -28,9 +28,13 @@ class WeatherAPI(object):
     def parse_response(self, response):
         status = response.status_code
         if status != 200:
-            return response.status_code, {
-                'error': ''
-            }
+            response_message = response.json()
+            try:
+                return response.status_code, response_message['error']['message']
+            except KeyError:
+                return response.status_code, 'Unknown Error'
+
         weather_data = response.json()
         forecast_data = weather_data['forecast']['forecastday']
+
         return response.status_code, utils.calculate_weather_stats(forecast_data)
