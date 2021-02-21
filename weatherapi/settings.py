@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'weatherapi.apps.location',
 
     # 3rd party apps
-    'rest_framework'
+    'rest_framework',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
@@ -131,13 +132,10 @@ STATIC_URL = '/static/'
 
 # Django Rest Framework config
 REST_FRAMEWORK = {
-    # 'DEFAULT_AUTHENTICATION_CLASSES': [
-    #     'rest_framework.authentication.',
-    #     'rest_framework.authentication.SessionAuthentication',
-    # ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
-    ]
+    ],
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
 }
 
 # Integrration settings

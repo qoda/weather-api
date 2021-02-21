@@ -1,4 +1,4 @@
-from rest_framework import exceptions, views
+from rest_framework import exceptions, serializers, views
 from rest_framework.response import Response
 
 from weatherapi.apps.location.integration import WeatherAPI
@@ -18,7 +18,12 @@ class LocationView(views.APIView):
         - Median temperature
         """
         city = kwargs.get('city')
-        days = request.query_params.get('days')
+        try:
+            days = int(request.query_params.get('days', 1))
+        except ValueError:
+            raise serializers.ValidationError(
+                'Forecast days range must be an integer', 400
+            )
 
         weather_api = WeatherAPI(city=city)
         raw_response = weather_api.get_forecast(days=days)

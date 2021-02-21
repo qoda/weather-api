@@ -42,3 +42,6 @@ Create a .env file inside the weatherapi/ directory and set the variables as fol
 | WEATHERAPI_URL             | Str  | https://api.weatherapi.com/v1/forecast.json              |
 | WEATHERAPI_KEY             | Str  | None                                                     |
 
+## Documentation
+
+Self-generated documentation is available at http://localhost:8000/swagger/
