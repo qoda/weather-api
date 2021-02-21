@@ -44,4 +44,4 @@ Create a .env file inside the weatherapi/ directory and set the variables as fol
 
 ## Documentation
 
-Self-generated documentation is available at http://localhost:8000/swagger/
+Self-generated documentation is available at http://localhost:8000/api/swagger/ or http://localhost:8000/api/redoc/

@@ -30,7 +30,8 @@ class WeatherAPI(object):
         return response
 
     def parse_response(self, response):
-        """Parse the weather data by calling an external calculation method"""
+        """Parse the weather data by calling an external calculation method.
+        """
         status = response.status_code
         if status != 200:
             response_message = response.json()

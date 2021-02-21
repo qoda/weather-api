@@ -22,12 +22,12 @@ schema_view = get_schema_view(
 # Django rest framework urlpatterns
 urlpatterns = [
     path(
-        'swagger/',
+        'api/swagger/',
         schema_view.with_ui('swagger', cache_timeout=0),
         name='schema-swagger-ui'
     ),
     path(
-        'redoc/',
+        'api/redoc/',
         schema_view.with_ui('redoc', cache_timeout=0),
         name='schema-redoc'
     ),
