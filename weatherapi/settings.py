@@ -139,3 +139,9 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+# Integrration settings
+WEATHERAPI = {
+    'KEY': env('WEATHERAPI_KEY'),
+    'URL': env('WEATHERAPI_URL', default='https://api.weatherapi.com/v1/forecast.json')
+}

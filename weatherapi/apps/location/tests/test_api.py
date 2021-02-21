@@ -1,9 +1,7 @@
-import json
-
 from django import test
-from django.utils import timezone
 
 from rest_framework.test import APIClient
+import vcr
 
 
 class APITestCase(test.TestCase):
@@ -15,7 +13,11 @@ class APITestCase(test.TestCase):
         super(APITestCase, cls).setUpTestData()
         cls.api_client = APIClient()
 
-    def test_api_endpoint_reachable(self):
+    @vcr.use_cassette(
+        "weatherapi/apps/location/fixtures/vcr/api.200.yaml",
+        record_mode="new_episodes"
+    )
+    def test_api_endpoint(self):
 
         # Ensure the endpoint is reachable
         response = self.api_client.get(
@@ -23,5 +25,6 @@ class APITestCase(test.TestCase):
             content_type="application/json"
         )
         self.assertEqual(response.status_code, 200)
+
 
 

@@ -39,3 +39,6 @@ Create a .env file inside the weatherapi/ directory and set the variables as fol
 |----------------------------|------|----------------------------------------------------------|
 | DEBUG                      | Bool | True                                                     |
 | SECRET_KEY                 | Str  | None                                                     |
+| WEATHERAPI_URL             | Str  | https://api.weatherapi.com/v1/forecast.json              |
+| WEATHERAPI_KEY             | Str  | None                                                     |
+
