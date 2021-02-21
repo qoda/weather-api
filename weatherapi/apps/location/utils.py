@@ -17,7 +17,7 @@ def calculate_weather_stats(forecast_list):
         'maximum': max(maximum_values),
         'minimum': min(minimum_values),
         'average': round(sum(average_values) / len(average_values), 1),
-        'median': statistics.median(median_values)
+        'median': round(statistics.median(median_values), 1)
     }
     return weather_stats
 
