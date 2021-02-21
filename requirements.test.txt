@@ -1,3 +1,4 @@
 -r requirements.pip
 
 coverage==5.4
+vcrpy==4.1.1
