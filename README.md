@@ -1,4 +1,4 @@
-# Weather API (v0.1.0)
+# Weather API (v0.1.1)
 
 Simple Weather API which fetches weather data from a specified source, maps the data and outputs agrigated values.
 
