@@ -1,4 +1,4 @@
-# Weather API (v0.1.0)
+# Weather API (v0.1.1)
 
 Simple Weather API which fetches weather data from a specified source, maps the data and outputs agrigated values.
 
@@ -21,12 +21,13 @@ python3 -m venv ve
 . ve/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+./manage.py runserver
 ```
 
 ## Running tests
 
 ```bash
-python -m pip install requirements.test.txt
+python -m pip install -r requirements.test.txt
 coverage run manage.py test weatherapi --settings=weatherapi.settings
 coverage report -m
 ```
