@@ -19,7 +19,7 @@ class APITestCase(test.TestCase):
 
         # Ensure the endpoint is reachable
         response = self.api_client.get(
-            "/api/locations/johannesburg/?days=1",
+            "/api/locations/johannesburg/",
             content_type="application/json"
         )
         self.assertEqual(response.status_code, 200)
