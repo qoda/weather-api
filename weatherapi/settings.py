@@ -129,6 +129,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_URL = '/static/'
 
+# Cache config, setup for development only - concider memcache when going to production
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+}
+
 
 # Django Rest Framework config
 REST_FRAMEWORK = {

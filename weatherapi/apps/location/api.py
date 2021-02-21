@@ -1,3 +1,6 @@
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+
 from rest_framework import exceptions, serializers, status, views
 from rest_framework.response import Response
 
@@ -25,13 +28,18 @@ class LocationView(views.APIView):
         401: AuthAPIException,
     }
 
+    @method_decorator(cache_page(60 * 15))
     def get(self, request, format=None, **kwargs):
-        """Return the agrigated data for specific city including:
+        """Return the cached agrigated data for specific city including:
 
         - Maximum temperature
         - Minimum temperature
         - Average temperature
         - Median temperature
+
+        An optional query param `day` is provided to retrieve agrigated data
+        over a given period. If not provided the data will be retrieved for a
+        single day.
         """
         city = kwargs.get('city')
         try:

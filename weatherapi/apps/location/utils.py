@@ -1,3 +1,4 @@
+from datetime import datetime
 import itertools
 import statistics
 
@@ -20,4 +21,3 @@ def calculate_weather_stats(forecast_list):
         'median': round(statistics.median(median_values), 1)
     }
     return weather_stats
-
