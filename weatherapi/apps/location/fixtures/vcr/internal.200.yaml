@@ -1,0 +1,109 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: https://api.weatherapi.com/v1/forecast.json?key=892da4cc7bda4c0dbdd142403211802&days=1&q=johannesburg
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAwAAAP//1JtLb+M2F4b/SqD1xBElWxfvig+DAgVaFMhiFl0YGluJhbElw5dJpkH/
+        e99zJFE8tGgnX2JruotoipIOH77nQubFW1XzbF9UpTd98cpsnXtT77dqmZVlvvt62D56n7xt/si/
+        e79mh31eUtO8OpT77Q+03VeH/fLml4dtMc/wwyrbe9PbIBoF+JtuCpKRn3zy9n/PigW61x3vrCfQ
+        O6z2xTqf5ZtqvvSmKlJh6ifjJKJhmh9xe+AH6tYPbgN1o8LpZOz9g3c5bLd5ice+4Om7/eywWWT7
+        fCGHilNFb2T8fjTaeIL33+frzWxev3Zz9eBNk2A0/uQVu9kiwzcr+v5yUbRW2+fPeLp3fyjLHxii
+        wI+4vLubL8rRU57tl/k22xSjebW+ay7vovFzNL7DaHdKhaNNY9MFjK9838dHPRXlYrbekCnUKG2u
+        v/F1OsIL8O+L/HGb454g9duWYotHf/njC95js813u8M2n62/0rC4D710Y4F3DP0R7IumebGZrdfe
+        1G+60DV14OvlYV3gY/HhQYgvX1UHTCTaH/J8tVsV33K2V0RduyYYLU5GmPjvsNo3DK14LLpaF6t8
+        5035hsN39KM/Hg+YOf7ekEzNl/y5k9EY5nio8JKYPJrk9m+ei79ePJptMZn4dmozAUiiSeTjMXzP
+        i7fOntuJDhXZoG2guU7I3uui1Cj49EZtA3pEySj+5GXfH3UPxr1toE9PqQGDdtMoWuqJHJN99tU+
+        W9lTYDbqecD40phNg2lPNBnTxSZfZMXqx+ypWK1mxX62zXi8tnmOhT7PZ9VD84Pns/HMO3Zl9dR7
+        R/0D39G3HP7MtvvVjxvm5f9ZFpG9LEJwQLxgQdAKAQ3biiZzdyi3xY4Q8CfTSXzzy+94IzTuclqV
+        fjQdT27+pLZ1VemewVTFXWvdVaFR1bdT19lmmfGwX7Lnony8+bX4+rU67JqBZjAoFkbZaKcXpaRF
+        y+qABQgobTFLJsmYAKR2qTy+P/XJhhqmkGaNr4gkXg6t8uCHPlP/b5VnWwzxeuUpi8fl/rz28MOZ
+        4XYtWsqjEnBeaxErzz3ewtYdTNex7kBJbOib6zfqDltL6o5+6/mSqCd14l70nnWTNuwS8ozW/Lnr
+        1TXpXov8aVNBEKgTS6ZuQJcwrPXYWl+9K6tdhXpNdb2M1XRaMjulnJB+dEqZ0mTxAqH10YNgFMC3
+        9CKoLAQD+kiNYEByNxSCgfR+Y3oX4fxUjHc9g2Dr12p/2Li+tyEI27pcX0DzYCMoeCME2aYSQTas
+        RJDHshHEWBJB3GYhiI85kvirICicdULfeBLB2g33qGBwhCCiHI2gIrMMh2DLHKvgeMTGNuIvFTez
+        PVs4VfDSCOIVJYJ64XQqGLSRY6eCbFgbQUElqSCPJRHEbRaC7Cqur4JjerdOBWO6PIlgChnsVcHQ
+        QlCNJgaC/k+ugucd8QcgCIO4VJCtJRFkk3WSRyrIvaQKci+JIKc8UgUVebef1hFDqzoEExKIUwjG
+        QeJAcHyEIKHaxIJROqQKNmFOFwtqzWuyUBVrXXSq4AfEgicRxDsJBGuT2QgK30wJHRvWRhALSiLo
+        U1InETSZpFiQPfoQKjghz2vGgvjGkwhGrnRkYiHI2a9GkFPfoRzx+XQkbvMVtyP+AARhapcKsrUk
+        gmwyiSD3EipY1xQkgtxLIFj3kgiaTNYIDuSI35qOQAMdKhgdqaCBYOyTCxmmFndeAycWgPefL5MR
+        4zEuBNlT2o5YeN3aEdsI1oZ9uwre+uTvRDDYePmfJxhEsbE3JU5CLgv25CPxUT6CjzRSYnj8YRg8
+        nxCHFoN9CAbvL8pQGdxRDObRJYJcZpUqGLSJVJeOcIZipyMYy44FzRoMaAaCdj7CdZohPDGnh50n
+        jujNyBM7EYxd+UhyVBg0EQwpRh4KwXMJsZIIfu6VwV4GcePrC4MKJnAz+JqqTHjMIBvWZvB8VeZW
+        2TIYpENFg8d7KKcZxFabQwZTi0FsxxgyGJvRoGNb7CL7AFx+4e2iJuJu05Lj4kyCqaurNZyV9Inh
+        +0NChQXhAnF87I8nbVGzq82wYWVizNaVIPJYUgx5LDMkBIjoZPpjgMj+//r+2AUi9vx6/XE6dqQl
+        yt4lic0SdaJeAeKF9mfP+uNIpsWf/7gQgl1ijJXYOV8K9pgR6Y+5VCv9MZtUIFjbVSLIY0kEeSwL
+        QbMFaQkQ5F3r/wCClJf0hYTK3iVheW9DwmTyirTk4lqIqWGtawrVrZtuDwqEuoG1sJfE91cJFYBv
+        xPCIxPioSgjGjpKTxnEa23W1eSWJPJYgsR7LIhHfLMSQ9/f/AySmvnIkJ9ioFlvGOMdhRIZJ9AoS
+        LySGXIzvCORifO182yIhnSEx3XFfZOj3HlXBjW+IDE8wmJAUCTXE+R5bDWubSjVkw0oGeSzJII8l
+        GPSFi6YiTVMAur4auoo0OKXV55BTf+LITnD8SjLIQZRWw9gsVQ8TGcZUru1YxLGRRme6c1O+xrOu
+        WN/3nJvyYZrj8wsY+g0wIh5zRYd8SErCGFKTcM04pGTXrBO2sA2jnaYkPJYFI6bDqtbw864PIy+e
+        LlXGSbimau2kMXHkKcraOKlPdWkaWfKHyZX53JdBIR/6EpIYpJpL9+k9n0/J6aM1zRGGD6OQz45I
+        CrWU6xylNqqURLaspJDHkpLIY5kU8p6fgLBJxK8PIQ4mwv4GhRG9LFVsXBSqwJWkWHsnkHkMZWgi
+        HMMwFLJYGBRqf9dpYSJjw94zpB9BYZemiBohpSm8U2JrYfNaHYVsVEkhZy62FuJGSWEooMMDjyo2
+        YVM+uD6FvI4MCDnRPwkhYsP+NMXaPQGEUFkNIR9VHQZCDp8MCPUuWAdhLB1ynzvmc8PvE0LA4nLH
+        HLHasWGj4CaCnMya+QnbVSLIY9mxobldxwia/plCw0ntMK6PIC8iA8GAXuQkgqkrP7E3T9glaATZ
+        GwyD4KQ9AVVnyHxSQzrjuHXX9Q7yhQjEpLsJxBtIAq3oj6SSLSoJZLPaBAoogRcyZCwf0xXzvzYI
+        VxzVVrk+gby0zUMMkHAC0FEtTIPQlZzYWydcodIAhsMlyDq2rwGMNI9tiUalzcS2Zwl7c5IPiAYB
+        iwvBiKwly4WpdLq1txY5M8HFhpUI8lhCBPHPEXi2RNCOBjkGGyIlGctgkHPIkwhGrozE3jlhb6AR
+        ZHEd6hwNP7xzxGFb/NB+WNF+Rq2L9aZJb5Xm/YlxgPXuhlDEh8Cr/oeiTvQIQl1h0nvIqOUI0aNe
+        LCwSQs67JYQmleSJmwLC5XXwXwAAAP//zJtbroMwDES31CYIxGJYCnuvM3mOiUG0hfa3qqyr9Nyx
+        x494CwXhSzMt+VOqDmLnfWeZa/YPw5C47dSkrQUxNf8VhKWMj0qIoRWlYg8JCGvWZrO635s51Sh0
+        oTllrDFgJsc6iJmcRnBTDOJhWQcRixFErBZBH8ilVJx82/0IwhpVBEstaNyWzF4I7NoRp6cmI01N
+        YE4OEHx/apLPnLq3ZGAr/b+RMRlys63ooecOTW9u8oWetZNf35qbwBVoFKkEjDpHdIaUjAfWKOqq
+        cJqoCJRQ2HRTKCLd348i0lNFER3sXTWcDFvi9I3J2NoSKUvkVz5A8cJLO2rQbOtCn1N2UsMeg/HG
+        Vnvjc3JYGSTgAl0wGMwgtptYDvGo9aOQt/GyzKAyK+FbiMVy2FqVmJER+34GLWdiyeHwNJyJ00cm
+        iJzLwljhHDB4uRyWVZRsklOd3/QKOTN3Wfx8qabRQ8rDkUVROs1iUum6VIPHZRZR92kWJRanZrSq
+        /rQ6RNOi6dOgc54FcVmXdX0BAAD//wMA5dA+BNVBAAA=
+    headers:
+      CDN-Cache:
+      - EXPIRED
+      CDN-CachedAt:
+      - '2021-02-21 11:54:46'
+      CDN-EdgeStorageId:
+      - '698'
+      CDN-PullZone:
+      - '93447'
+      CDN-RequestCountryCode:
+      - ZA
+      CDN-RequestId:
+      - 14fa7af7abe7980e6ecf561d8741c927
+      CDN-RequestPullCode:
+      - '200'
+      CDN-RequestPullSuccess:
+      - 'True'
+      CDN-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cache-Control:
+      - public, max-age=180
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 21 Feb 2021 11:54:46 GMT
+      Server:
+      - BunnyCDN-JH1-698
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-StackifyID:
+      - V2|70f06a59-6e7f-4c7f-b78f-b03ebb7a4131|C0|CD0
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: https://api.weatherapi.com/v1/forecast.json?key=fake-key&days=1&q=johannesburg
+  response:
+    body:
+      string: '{"error":{"code":2006,"message":"API key is invalid."}}'
+    headers:
+      CDN-Cache:
+      - EXPIRED
+      CDN-CachedAt:
+      - '2021-02-21 11:52:25'
+      CDN-EdgeStorageId:
+      - '698'
+      CDN-PullZone:
+      - '93447'
+      CDN-RequestCountryCode:
+      - ZA
+      CDN-RequestId:
+      - 54ed1a4f6e202e02112f7475bd21772d
+      CDN-RequestPullCode:
+      - '401'
+      CDN-RequestPullSuccess:
+      - 'True'
+      CDN-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cache-Control:
+      - public, max-age=5
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 21 Feb 2021 11:52:25 GMT
+      Server:
+      - BunnyCDN-JH1-698
+      Transfer-Encoding:
+      - chunked
+      X-StackifyID:
+      - V2|30b39f4d-b74b-48dc-b167-b484945d7c3d|C0|CD0
+    status:
+      code: 401
+      message: Unauthorized
+version: 1

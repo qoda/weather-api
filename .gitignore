@@ -19,5 +19,5 @@ local_settings.py
 .editorconfig
 .tags
 .tags_swap
-.env
+*.env
 __pycache__
