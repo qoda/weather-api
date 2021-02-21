@@ -2,7 +2,7 @@ import itertools
 import statistics
 
 def calculate_weather_stats(forecast_list):
-    """Iterates overr the weather data and calculates the max, min, avg and
+    """Iterates over the weather data and calculates the max, min, avg and
     median from the values.
     """
     try:

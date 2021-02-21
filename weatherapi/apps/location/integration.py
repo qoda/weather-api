@@ -11,8 +11,11 @@ class WeatherAPI(object):
     """
     def __init__(self, city, *arg, **kwargs):
         self.city = city
-        self.api_url = settings.WEATHERAPI['URL']
-        self.api_key = settings.WEATHERAPI['KEY']
+        self.api_url = kwargs.get('api_url', settings.WEATHERAPI['URL'])
+        self.api_key = kwargs.get('api_key', settings.WEATHERAPI['KEY'])
+        self.calculation_method = kwargs.get(
+            'calculation_method', utils.calculate_weather_stats
+        )
 
     def get_forecast(self, days):
         """Get a weather forecast for period of time.
@@ -23,9 +26,11 @@ class WeatherAPI(object):
             'q': self.city
         }
         response = requests.get(self.api_url, payload)
+
         return response
 
     def parse_response(self, response):
+        """Parse the weather data by calling an external calculation method"""
         status = response.status_code
         if status != 200:
             response_message = response.json()
@@ -37,4 +42,4 @@ class WeatherAPI(object):
         weather_data = response.json()
         forecast_data = weather_data['forecast']['forecastday']
 
-        return response.status_code, utils.calculate_weather_stats(forecast_data)
+        return response.status_code, self.calculation_method(forecast_data)
