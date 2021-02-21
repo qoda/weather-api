@@ -1,0 +1,12 @@
+[run]
+branch = True
+source =
+    weatherapi
+omit =
+    *migrations*
+    *tests*
+    *wsgi*
+    *apps.py
+
+[report]
+show_missing = True
