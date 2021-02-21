@@ -1,4 +1,4 @@
--r requirements.pip
+-r requirements.txt
 
 coverage==5.4
 vcrpy==4.1.1
